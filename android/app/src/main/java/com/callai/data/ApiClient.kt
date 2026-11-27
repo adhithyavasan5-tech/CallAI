@@ -6,7 +6,7 @@ import retrofit2.http.GET
 import retrofit2.http.POST
 import retrofit2.http.Path
 import retrofit2.http.PUT
-import retrofit2.Body
+import retrofit2.http.Body
 
 // Android emulator -> host computer localhost. For a real device, use your PC's LAN IP.
 private const val BASE_URL = "http://10.0.2.2:8000/"
