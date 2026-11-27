@@ -9,7 +9,7 @@ import retrofit2.http.PUT
 import retrofit2.http.Body
 
 // Android emulator -> host computer localhost. For a real device, use your PC's LAN IP.
-private const val BASE_URL = "http://10.0.2.2:8000/"
+private const val BASE_URL = "http://172.21.29.235:8000/"
 
 interface CallAiApi {
     @GET("api/v1/dashboard/overview") suspend fun overview(): DashboardOverview
@@ -27,3 +27,4 @@ object ApiClient {
             .create(CallAiApi::class.java)
     }
 }
+
